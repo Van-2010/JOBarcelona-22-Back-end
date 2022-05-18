@@ -19,3 +19,8 @@ User stories / Objetivos
 ✅ Task 6 → Un user tiene como parámetros obligatorios: username (tiene que ser único), email (tiene que seguir el patrón de correo y ser único), password (tiene que tener mínimo de 8 carácteres, incluir una mayúscula y un número).
 
 Para poder finalizar la implementación con éxito tendrás que descifrar el código de encriptación y desbloquear el documento dónde se encuentran las librerías secretas, que son las que se se están usando para documentar y para el diseño del componente.
+
+# Versiones
+Maven
+Java 17
+Swagger
