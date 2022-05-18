@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "ba983854-31c2-4c68-9750-743ca8bc96b6",
+		"name": "JOBarcelona",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"Lula\",\"username\":\"user\",\"email\":\"yahoiol@iuo\",\"password\":\"user\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjUyODk3NzUyLCJleHAiOjE2NTI5MzM3NTJ9.PfWy2IeGjIe9DIA0dFb0voJL9LWfBlCEoKtkRpgnOjykbij6Q8zEscxPN6iqkS6ZvkPzb8YSBt0Hxg6g-Yg3nQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create user login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjUyODkyMTI5LCJleHAiOjE2NTI5MjgxMjl9.nrpM4qGk2GWFKEsU4G425YjjsmP7MvfMZ_3uoHS_lAKvSXBrYmh1DzB7LjsSHiOS35vPeG2ciwVMJL8VvIEFJQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nombreUsuario\":\"user\",\"password\":\"user\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JsonList",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjUyODk3NzUyLCJleHAiOjE2NTI5MzM3NTJ9.PfWy2IeGjIe9DIA0dFb0voJL9LWfBlCEoKtkRpgnOjykbij6Q8zEscxPN6iqkS6ZvkPzb8YSBt0Hxg6g-Yg3nQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/jsonListas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"jsonListas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
