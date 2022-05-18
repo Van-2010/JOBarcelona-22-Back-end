@@ -21,6 +21,16 @@ User stories / Objetivos
 Para poder finalizar la implementación con éxito tendrás que descifrar el código de encriptación y desbloquear el documento dónde se encuentran las librerías secretas, que son las que se se están usando para documentar y para el diseño del componente.
 
 # Versiones
-Maven
-Java 17
+Maven,
+Java 17,
 Swagger
+
+# Desarrollo
+Proyecto realizado con SpringBoot.
+Se conecta a una base de datos Mysql:
+Username:root
+Contraseña:""
+Se crea un paquete de seguridad para hacer funcionar el JWT
+Comprobaciones con postman y con swagger (http://localhost:3030/swagger-ui/index.html#)
+
+
